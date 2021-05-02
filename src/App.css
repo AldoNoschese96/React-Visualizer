@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar Component */
+.navContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0rem;
+  max-height: 10vh;
+  color: rgb(243, 243, 243);
+  background-color: #0061a8;
+}
+.navContainer button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  background-color: #fbe0c4;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navContainer > .divCta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .div_speed .divCta .div_speed {
+  display: flex;
+  align-items: center;
+} */
+
+.navContainer ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navContainer ul li {
+  margin: 0rem 1.5rem;
+}
+
+.navContainer ul li > button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgb(243, 243, 243);
+  cursor: pointer;
+}
+
+/* Visualizer */
+
+.visualizerContainer {
+  display: flex;
+  align-items: flex-end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  min-height: 80vh;
 }
